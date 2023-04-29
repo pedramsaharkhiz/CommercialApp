@@ -9,6 +9,7 @@ namespace API.Controllers
 {
     [ApiController]
     [Route("[controller]")]
+    [ApiExplorerSettings(IgnoreApi =true)]//to Disappear weatherForecast api in swagger ui
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries = new[]

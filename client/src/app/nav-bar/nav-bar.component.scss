@@ -1,0 +1,12 @@
+.cart-no{
+    position: absolute;//be sure that the parent element is position relative!-->in this case parent is "a"
+    min-height: 25px;
+    min-width: 25px;
+    border-radius: 50%;
+    font-size: 1em;
+    background: rgb(38, 83, 113);
+    color: white;
+    text-align: center;
+    top: -12px;
+    right: 32px; 
+}

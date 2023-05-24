@@ -42,7 +42,6 @@ export class ShopComponent implements OnInit {
     }, error => {
       console.log(error);
     });
-    console.log(1);
   }
   getBrands() {
     this.ShopService.getBrands().subscribe(response => {

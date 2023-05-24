@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+.container {
+    min-height: 100vh;
+    // background-color: #668489;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.card {
+    top: -50px;
+    max-height: 500px;
+    width: 320px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden
+}
+
+.top-div {
+    display: flex;
+    justify-content: space-between;
+    position: relative
+}
+
+.top-div span {
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-color: #bbbab5;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.top-div button {
+    background-color: #fff;
+    font-size: 11px;
+    height: 20px;
+    width: 35px;
+    position: absolute;
+    top: 5px;
+    left: 125px
+}
+
+.top-div span small {
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    right: -6px;
+    bottom: 15px;
+    border: 3px solid #fff
+}
+
+.image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.image-section img {
+    max-height: 165px;
+    max-width: 300px;
+    margin-top: 10px
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 185px;
+    left: 68px
+}
+
+.circle span {
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    border-radius: 50%;
+    top: 40px;
+    right: 20px;
+    margin-right: 20px
+}
+
+// .circle span:nth-child(1) {
+//     background-color: #D07619
+// }
+
+// .circle span:nth-child(2) {
+//     background-color: #5C5952
+// }
+
+// .circle span:nth-child(3) {
+//     background-color: #E39333
+// }
+
+// .circle span:nth-child(4) {
+//     background-color: #668489
+// }
+
+.bottom-div {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative
+}
+
+.bottom-div h3 {
+    font-size: large;
+    font-weight: bolder;
+}
+
+#desc {
+    font-size: small;
+    font-weight: lighter;
+    margin-bottom: -5px;
+    background-color: #f1f1f2;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.sign {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center
+}
+
+.sign span {
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    display: flex;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer
+}
+
+#minus:hover {
+    background-color: #e43e38;
+    transition: all 0.3s;
+}
+
+#plus:hover {
+    background-color: #43af33;
+    transition: all 0.3s;
+}
+
+.sign small {
+    font-weight: 700;
+    margin-top: -14px;
+    margin-right: 4px;
+    height: 2px;
+    width: 2px
+}
+
+.sign span i {
+    margin-top: 5px
+}
+
+.card p {
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 600
+}
+
+.last-section {
+    margin-top: 20px;
+    height: 50px;
+    width: 100%;
+    background-color: #132228;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s;
+    cursor: pointer
+}
+
+.last-section .last {
+    padding: 20px;
+    position: relative
+}
+
+.last i {
+    font-size: 35px;
+    margin-top: 2px;
+    color: #F6F6F6
+}
+
+.last button {
+    position: absolute;
+    height: 20px;
+    width: 70px;
+    top: 30px;
+    left: 55px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+    border: none;
+    background-color: inherit;
+    border-radius: 10px;
+    transition: all 0.3s;
+    cursor: pointer
+}
+
+.last-section p {
+    color: #F6F6F6;
+    padding: 20px;
+    margin-top: 1px
+}
+
+.last-section:hover {
+    background-color: #541de0
+}
+
+.last button:hover {
+    background-color: #541de0
+}

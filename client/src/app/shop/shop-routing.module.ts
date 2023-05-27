@@ -6,7 +6,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   { path: '', component: ShopComponent },
-  { path: ':id', component: ProductDetailsComponent },
+  { path: ':id', component: ProductDetailsComponent, data: { breadcrumb: { alias: 'productDetails' } } },
 ];
 
 
@@ -15,7 +15,7 @@ const routes: Routes = [
   imports: [
     RouterModule.forChild(routes)
   ],
-  exports:[
+  exports: [
     RouterModule
   ]
 })

@@ -1,19 +1,25 @@
 <div class="row" *ngIf="product">
     <div class="container">
         <div class="card">
-            <div class="top-div"> <span><i class="fa fa-angle-left"></i></span> <span><i class="fa fa-shopping-cart"></i><small></small></span> </div>
-            <div class="image-section"> <img src="{{product.pictureUrl}}"alt="{{product.name}}">
+            <div class="top-div"> <span><i class="fa fa-angle-left"></i></span> <span><i
+                        class="fa fa-shopping-cart"></i><small></small></span> </div>
+            <div class="image-section"> <img src="{{product.pictureUrl}}" alt="{{product.name}}">
                 <!-- <div class="circle"> <span></span> <span></span> <span></span> <span></span> </div> -->
             </div>
             <div class="bottom-div">
                 <h3>{{product.name}}</h3>
-                <div class="sign"> <span id="minus"><i class="fa fa-minus"></i></span> <small id="quantity">1</small> <span id="plus"><i class="fa fa-plus"></i></span> </div>
+                <div class="sign"> <span id="minus"><i class="fa fa-minus"></i></span> <small id="quantity">1</small>
+                    <span id="plus"><i class="fa fa-plus"></i></span>
+                </div>
             </div>
-            
+
             <p id="desc">{{product.description}}</p>
-            
+
             <div class="last-section">
-                <div class="last"> <i class="fa fa-plus-square"></i> <button>Add to cart</button> </div> <input type="hidden" value="200" id="product_input_price">
+                <div class="last"> <i class="fa fa-plus-square"></i> <button>
+                        Add to cart
+                    </button>
+                </div>
                 <p><span id="price">{{product.price|currency}}</span></p>
             </div>
         </div>

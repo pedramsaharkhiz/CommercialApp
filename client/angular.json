@@ -32,11 +32,15 @@
             "styles": [
               "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
-              "./node_modules/font-awesome/css/font-awesome.min.css",
+              "./node_modules/bootswatch/dist/Sandstone/bootstrap.min.css",
+              "node_modules/@fortawesome/fontawesome-free/css/all.css",
+              "node_modules/ngx-spinner/animations/ball-fall.css",
               "./node_modules/ngx-toastr/toastr.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/@fortawesome/fontawesome-free/js/all.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -69,8 +73,8 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
             "sslKey": "ssl/server.key",
-              "sslCert": "ssl/server.crt",
-              "ssl":true
+            "sslCert": "ssl/server.crt",
+            "ssl": true
           },
           "configurations": {
             "production": {

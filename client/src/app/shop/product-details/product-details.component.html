@@ -8,15 +8,16 @@
             </div>
             <div class="bottom-div">
                 <h3>{{product.name}}</h3>
-                <div class="sign"> <span id="minus"><i class="fa fa-minus"></i></span> <small id="quantity">1</small>
-                    <span id="plus"><i class="fa fa-plus"></i></span>
+                <div class="sign"> <span (click)="decrementQuantity()" id="minus"><i class="fa fa-minus"></i></span>
+                    <small id="quantity">{{quantity}}</small>
+                    <span (click)="incrementQuantity()" id="plus"><i class="fa fa-plus"></i></span>
                 </div>
             </div>
 
             <p id="desc">{{product.description}}</p>
 
             <div class="last-section">
-                <div class="last"> <i class="fa fa-plus-square"></i> <button>
+                <div class="last"> <i class="fa fa-plus-square"></i> <button (click)="addItemToBakset()">
                         Add to cart
                     </button>
                 </div>

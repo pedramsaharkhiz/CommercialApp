@@ -5,7 +5,7 @@
                 <img class="pic-1" src="{{product.pictureUrl}}">
             </a>
             <ul class="product-links">
-                <li><a href="/shop/{{product.id}}" data-tip="Add to Cart"><i class="fa fa-shopping-bag"></i></a></li>
+                <li (click)="addItemToBasket()"><a href="/shop/{{product.id}}" data-tip="Add to Cart"><i class="fa fa-shopping-bag"></i></a></li>
                 <li><a href="/shop/{{product.id}}" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
                 <li><a href="#" data-tip="Wishlist"><i class="fas fa-heart"></i></a></li>
             </ul>

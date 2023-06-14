@@ -1,0 +1,41 @@
+.sign {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center
+}
+
+.sign span {
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    display: flex;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer
+}
+
+#minus:hover {
+    background-color: #ffbf00;;
+    transition: all 0.3s;
+}
+
+#plus:hover {
+    background-color: #ffbf00;;
+    transition: all 0.3s;
+}
+
+// .sign small {
+//     font-weight: 700;
+//     margin-top: -14px;
+//     margin-right: 4px;
+//     height: 2px;
+//     width: 2px
+// }
+
+// .sign span i {
+//     margin-top: 5px
+// }

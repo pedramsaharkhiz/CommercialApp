@@ -1,0 +1,47 @@
+
+.invalid-feedback {
+    margin-left: 10px;
+    margin-bottom: 3px;
+}
+
+.form-group .label {
+    font-size: 17px;
+    font-weight: 600;
+    margin-left: 10px;
+    margin-bottom: 3px;
+}
+
+.form-group .form-control {
+    color: #888;
+    font-weight: 400;
+    letter-spacing: 1px;
+    height: 40px;
+    margin-left: 10px;
+    margin-top: 8px;
+    border-radius: 10px;
+    width: 95%;
+    box-shadow: 0 0 5px #dcdcdc;}
+
+.form-control {
+    margin: 5px;
+}
+
+.form-group .form-control:focus {
+    
+    box-shadow: 0 0 3px #e7e7e7;
+}
+
+.pending{
+   position:relative;
+    margin-left: 10px;
+    margin-top: 8px;
+    width: 90%;
+}
+.loader {
+    position: absolute;
+    width: auto;
+    bottom: 20px;
+    left: 98%;
+    margin-top: 0;
+    color: #888;
+}

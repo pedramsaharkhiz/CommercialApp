@@ -1,0 +1,29 @@
+<div class="form-bg my-4" style="align-content: center;">
+    <div class="container">
+        <div class="row" style="display: flex;justify-content: center;">
+            <div class="col-md-offset-3  col-md-6">
+                <div class="form-container">
+                    <h3 class="title">Register</h3>
+                    <form class="form-horizontal" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                        <app-text-input formControlName="displayName" [label]="'Display Name'"></app-text-input>
+                        <app-text-input formControlName="email" [label]="'Email Address'"></app-text-input>
+                        <app-text-input formControlName="password" [label]="'Password'"
+                            [type]="'password'"></app-text-input>
+                        <ul class="text-danger" *ngIf="errors">
+                            <li *ngFor="let error of errors">
+                                {{error}}
+                            </li>
+                        </ul>
+                        <div class="check-terms list-unstyled">
+                            <input type="checkbox" class="checkbox">
+                            <span class="check-label">I agree to the terms</span>
+                        </div>
+                        <span class="signin-link">Already have an account? <br> Click here to <a
+                                href="">Login</a></span>
+                        <button class="btn signup">Create Account</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

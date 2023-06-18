@@ -1,0 +1,22 @@
+<div class="row mx-3 mt-5" style="display: flex;justify-content: center;max-height: 100%;">
+    <div class="col-md-offset-3  col-md-6">
+        <div class="form-container">
+            <h3 class="title">Login</h3>
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="form-horizontal inline">
+
+                <app-text-input formControlName="email" [label]="'Email Address'"></app-text-input>
+                <app-text-input formControlName="password" [label]="'Password'" [type]="'password'"></app-text-input>
+
+                <div class="check-terms mt-2">
+                    <input type="checkbox" class="checkbox">
+                    <span class="check-label">Remember me !</span>
+                </div>
+                <div class="row" style="display: inline;max-width:200px;">
+                    <span class="signin-link">Dont have an Account?<br> Click here to <a href="">Sign
+                            up</a></span>
+                    <button [disabled]="loginForm.invalid" class="btn signup">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

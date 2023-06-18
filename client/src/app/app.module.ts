@@ -10,6 +10,7 @@ import { ErrorInterceptor } from './core/Interceptors/error.interceptor';
 import {NgxSpinnerModule} from 'ngx-spinner';
 import { LoadingInterceptor } from './core/Interceptors/loading.interceptor';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,8 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     CoreModule,
     HomeModule,
     NgxSpinnerModule,
-    CarouselModule
+    CarouselModule,
+    BsDropdownModule.forRoot()
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },

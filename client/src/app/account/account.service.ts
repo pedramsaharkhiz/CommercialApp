@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject, ReplaySubject, map, of } from 'rxjs';
 import { IUser } from '../shared/models/User';
 import { Router } from '@angular/router';
+import { IAddress } from '../shared/models/Address';
 
 @Injectable({
   providedIn: 'root'
@@ -13,9 +14,9 @@ export class AccountService {
   currentUser$ = this.currentUserSource.asObservable();
 
   constructor(private http: HttpClient, private router: Router) { }
- 
+
   loadCurrentUser(token: string) {
-    if(token===null){
+    if (token === null) {
       this.currentUserSource.next(null!);
       return null;
     }
@@ -40,14 +41,14 @@ export class AccountService {
           this.currentUserSource.next(user);
         }
       })
-      );
-    }
-    register(values: any) {
-      return this.http.post(this.baseUrl + 'account/register', values).pipe(
-        map((user: any) => {
-          if (user) {
-            localStorage.setItem('token', user.token);
-            this.currentUserSource.next(user);
+    );
+  }
+  register(values: any) {
+    return this.http.post(this.baseUrl + 'account/register', values).pipe(
+      map((user: any) => {
+        if (user) {
+          localStorage.setItem('token', user.token);
+          this.currentUserSource.next(user);
         }
       })
     );
@@ -62,6 +63,12 @@ export class AccountService {
 
   checkEmailExists(email: string) {
     return this.http.get(this.baseUrl + 'account/emailexists?email=' + email);
+  }
+  getUserAddress() {
+    return this.http.get<IAddress>(this.baseUrl + 'account/address');
+  }
+  updateUserAddress(address: IAddress) {
+    return this.http.put<IAddress>(this.baseUrl + 'account/address', address);
   }
 }
 

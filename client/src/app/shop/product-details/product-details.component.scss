@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
-* {
-    margin: 0;
-    padding: 0
-}
 
 .container {
     min-height: 100vh;
@@ -16,7 +12,7 @@
 .card {
     top: -90px;
     max-height: 550px;
-    width: 320px;
+    width: 600px;
     background-color: #fff;
     border-radius: 10px;
     padding: 20px;
@@ -24,7 +20,7 @@
     position: relative;
     font-family: 'Poppins', sans-serif;
     overflow: hidden;
-    box-shadow: 1px 1px 5px 5px #d6d5d0af;
+    box-shadow: 3px 3px 15px 5px #d6d5d0af;
 }
 
 .top-div {
@@ -88,7 +84,7 @@
 .circle span {
     height: 30px;
     width: 30px;
-    background-color: black;
+    background-color: #1f1f1f;
     border-radius: 50%;
     top: 40px;
     right: 20px;
@@ -143,7 +139,7 @@
 .sign span {
     height: 30px;
     width: 30px;
-    background-color: black;
+    background-color: #1f1f1f;
     display: flex;
     border-radius: 50%;
     color: #fff;
@@ -154,12 +150,14 @@
 }
 
 #minus:hover {
-    background-color: #ffbf00;;
+    background-color: #869d6d;
+    ;
     transition: all 0.3s;
 }
 
 #plus:hover {
-    background-color: #ffbf00;;
+    background-color: #869d6d;
+    ;
     transition: all 0.3s;
 }
 
@@ -185,7 +183,7 @@
     margin-top: 20px;
     height: 50px;
     width: 100%;
-    background-color: #132228;
+    background-color: #93ac76;
     border-radius: 10px;
     display: inline-flex;
     justify-content: space-between;
@@ -199,20 +197,19 @@
     position: relative
 }
 
-.last{
+.last {
     font-size: 35px;
-    // margin-top: 20px;
     color: #F6F6F6;
     display: inline;
-    
+
 }
 
 .last button {
     position: absolute;
-    height: 20px;
-    width: 70px;
-    top: 30px;
-    left: 55px;
+    height: auto;
+    width: 100px;
+    top: 33px;
+    left: 45px;
     font-size: 12px;
     font-weight: 400;
     color: #fff;
@@ -231,9 +228,19 @@
 
 
 .last-section:hover {
-    background-color: #ffbf00;
+    background-color: #869d6d;
 }
 
 .last button:hover {
-    background-color: #ffbf00;
+    background-color: inherit;
+}
+
+a {
+    color: #1f1f1f;
+    cursor: pointer;
+}
+#price{
+    position: relative;
+    top: 7px;
+    font-size: larger;
 }

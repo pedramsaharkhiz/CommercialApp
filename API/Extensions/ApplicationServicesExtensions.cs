@@ -12,11 +12,12 @@ namespace API.Extensions
     {
         public static IServiceCollection addApplicationServices(this IServiceCollection services)
         {
-            services.AddScoped<ITokenService,TokenService>();
-            services.AddScoped<IOrderService,OrderService>();
-            services.AddScoped<IUnitOfWork,UnitOfWork>();
+            services.AddScoped<ITokenService, TokenService>();
+            services.AddScoped<IOrderService, OrderService>();
+            services.AddScoped<IPaymentService, PaymentService>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IProductRepository, ProductRepository>();
-            services.AddScoped<IBasketRepository,BasketRepository>();
+            services.AddScoped<IBasketRepository, BasketRepository>();
             services.AddScoped(typeof(IGenericRepository<>), (typeof(GenericRepository<>))); //generic repository
             services.Configure<ApiBehaviorOptions>(options =>
             {

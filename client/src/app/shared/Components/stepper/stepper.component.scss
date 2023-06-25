@@ -1,3 +1,25 @@
-button.nav-link{
-    background: #F6F7F9;
+.nav-link {
+    background-color: #F6F7F9;
+    border-radius: 5px;
+    padding: 1.30em;
+
+    &:focus {
+        outline: none;
+    }
+
+    &.active:hover {
+        color: #F6F7F9;
+    }
+
+    &.active:focus {
+        outline: none;
+    }
+
+    &:active {
+        outline: none;
+    }
+
+    &:disabled:not(.active) {
+        color: #333
+    }
 }

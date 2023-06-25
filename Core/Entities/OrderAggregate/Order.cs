@@ -14,7 +14,8 @@ namespace Core.Entities.OrderAggregate
             string buyerEmail,
             Address shipToAddress,
             DeliveryMethod deliveryMethod,
-            decimal subtotal
+            decimal subtotal,
+            string paymentIntentId
         )
         {
             BuyerEmail = buyerEmail;
@@ -22,6 +23,7 @@ namespace Core.Entities.OrderAggregate
             DeliveryMethod = deliveryMethod;
             OrderItems = orderItems;
             Subtotal = subtotal;
+            PaymentIntentId=paymentIntentId;
         }
 
         public string BuyerEmail { get; set; }

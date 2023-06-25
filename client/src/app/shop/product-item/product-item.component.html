@@ -1,18 +1,18 @@
 <div class="product-card h-100 shadow-sm">
     <div class="product-grid">
         <div class="product-image">
-            <a href="#" class="image">
+            <a class="image">
                 <img class="pic-1" src="{{product.pictureUrl}}">
             </a>
             <ul class="product-links">
-                <li (click)="addItemToBasket()"><a href="/shop/{{product.id}}" data-tip="Add to Cart"><i class="fa fa-shopping-bag"></i></a></li>
+                <li (click)="addItemToBasket()"><a data-tip="Add to Cart"><i class="fa fa-shopping-bag"></i></a></li>
                 <li><a href="/shop/{{product.id}}" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
                 <li><a href="#" data-tip="Wishlist"><i class="fas fa-heart"></i></a></li>
             </ul>
             <div class="price">{{product.price|currency}}</div>
         </div>
         <div class="product-content">
-            <h3 class="title"><a href="/shop/{{product.id}}" style="text-decoration: none;">{{product.name}}</a></h3>
+            <h3 class="title"><a style="text-decoration: none;cursor:default;">{{product.name}}</a></h3>
             <ul class="rating">
                 <li class="fas fa-star"></li>
                 <li class="fas fa-star"></li>

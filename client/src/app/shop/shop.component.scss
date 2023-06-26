@@ -1,8 +1,18 @@
-// .form-inline{
-//     display: inline-block;
-//     margin-right: 50px;
-// }
-// #pedram{
-//     display: inline-block;
-    
-// }
+.list-group-item{
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    &:focus{
+        outline: none;
+    }
+    &.active{
+        border-radius: 10px;
+    }
+    &:not(.active):hover{
+        color: #fff;
+        border-radius: 10px;
+        background-color:rgb(0, 123, 255,0.705) ;
+    }
+
+}
